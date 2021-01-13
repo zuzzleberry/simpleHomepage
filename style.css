@@ -71,19 +71,11 @@ button {
     display: block;
 } */
 .dropdown-content {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
+    /* position: absolute; */
     z-index: 2000;
-}
-
-#a {
-    opacity: 0.0
-}
-
-#aa:hover .dropdown-content {
-    display: flex;
 }
 
 
