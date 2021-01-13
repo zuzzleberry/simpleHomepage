@@ -9,27 +9,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(238, 238, 238)
+    background-color: rgb(246, 246, 246)
 }
 
 #logo {
-    width: 100px;
+    padding-left: 20px;
     
     
 }
 
 .header {
     height: 60px;
-    background-color: rgb(246,246,246);
-    align-self: flex-start;
+    width: 1000px;
+    background-color: rgb(246, 246, 246)
+    /* align-self: flex-start; */
     /* margin-left: 500px; */
+    
+    /* margin-right: 300px; */
+    overflow: hidden;
     
 }
 
 .banner {
-    position: fixed;
+    /* position: fixed; */
     top:0;
-    z-index:1000
+    width: 1500px;
+    z-index:2000
 }
 
 
@@ -83,7 +88,7 @@ button {
 .menu {
     display: flex;
     flex-direction: column;
-    width: 2000px;
+    width: 1500px;
     background-color: black;
     align-items: center;
 }
@@ -109,8 +114,9 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    background-color: rgb(238, 238, 238);
+    /* margin-top: 100px; */
+    background-color: rgb(246, 246, 246)
+
     
 
 }
@@ -128,14 +134,15 @@ a {
 
 .buttonsBanner {
     
-    /* width: 1000px; */
+    width: 150px;
     align-items: center;
 }
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(246, 246, 246)
+
     width: 150px;
 
 }
@@ -144,13 +151,16 @@ a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 2700px;
-    background-color: rgb(238, 238, 238);
+    width: 1500px;
+    background-color: rgb(246, 246, 246)
+
 }
 .rowHead {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Abel', sans-serif;
     font-weight: 20;
-    color: rgb(118,185,0);
+    /* color: rgb(118,185,0); */
+    color: rgb(112, 119, 240);
 }
 
 .row {
@@ -175,6 +185,24 @@ a {
     /* margin-left: 20px; */
     font-size: 14px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tile h4 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    padding-left: 20px;
+    /* color: rgb(118,185,0); */
+    color: rgb(112, 119, 240);
+    font-weight: 25;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+}
+.tile p {
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /* .images {
