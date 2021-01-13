@@ -36,24 +36,6 @@
     width: 1500px;
     z-index:2000
 }
-
-
-button {
-    background-color: black;
-    color: rgb(153,153,153);
-    height: 60px;
-    width: 150px;
-    
-
-}
-
-
-
-/* .menu {
-    margin-left: 50px;
-    margin-right: auto;
-} */
-
 .tabs {
     display: flex;
     flex-direction: row;
@@ -62,8 +44,13 @@ button {
 
 .tab {
     border: none;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: black;
+    
+    color: rgb(153,153,153);
+    height: 60px;
+    width: 130px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dropdowns {
@@ -141,10 +128,8 @@ a {
 .buttons {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(246, 246, 246)
-
+    background-color: rgb(246, 246, 246);
     width: 150px;
-
 }
 
 .content {
@@ -157,7 +142,7 @@ a {
 }
 .rowHead {
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Abel', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 20;
     /* color: rgb(118,185,0); */
     color: rgb(112, 119, 240);
@@ -195,7 +180,8 @@ a {
     color: rgb(112, 119, 240);
     font-weight: 25;
     font-size: 20px;
-    font-family: 'Abel', sans-serif;
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 .tile p {
     margin-top: 5px;
