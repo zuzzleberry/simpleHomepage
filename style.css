@@ -30,11 +30,23 @@
     
 }
 
+
+
+
+
 .banner {
     /* position: fixed; */
     top:0;
     width: 1500px;
     z-index:2000
+}
+.menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 1500px;
+    background-color: black;
+    align-items: center;
 }
 .tabs {
     display: flex;
@@ -47,7 +59,7 @@
     font-size: 18px;
     background-color: black;
     
-    color: rgb(153,153,153);
+    color: rgb(190, 190, 190);
     height: 60px;
     width: 130px;
     font-family: 'Roboto', sans-serif;
@@ -56,35 +68,50 @@
 .dropdowns {
     display: flex;
     flex-direction: row;
+    align-content: space-evenly;
+    width: 910px;
+    /* align-content: ; */
 }
 
-/* Show the dropdown menu on hover */
-/* .dropdown:hover .dropdown-content {
-    display: block;
-} */
 .dropdown-content {
     display: none;
     flex-direction: column;
-    flex-wrap: wrap;
-    /* position: absolute; */
     z-index: 2000;
 }
 
-
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    width: 1500px;
-    background-color: black;
-    align-items: center;
+.dropButton {
+    width: 130px;
+    height: 40px;
+    text-align: center;
 }
+#a {
+    display: none;
+    flex-direction: column;
+    z-index: 2000;
+}
+/* .tab:hover #a {
+    display: flex;
+} */
 
+/* #aa:hover .dropdowns {
+    display: flex;
+}
+#aa:hover #a {
+    display: flex;
+} */
+
+/* 
 a {
     height: 40px;
     width: 150px;
     align-items: center;
-}
+} */
+
+
+
+
+
+
 
 
 .images {
@@ -103,9 +130,13 @@ a {
     justify-content: center;
     /* margin-top: 100px; */
     background-color: rgb(246, 246, 246)
+}
 
-    
-
+.slideOn {
+    display: flex;
+}
+.slideOff {
+    display: none;
 }
 
 .slideshowButton {
