@@ -73,7 +73,7 @@ button5.addEventListener("click", function() {
 
 // Model
 
-let slide = 2;
+let slide = 1;
 
 let slideAutoChange = () => {
     slideChange(slide);
@@ -81,13 +81,13 @@ let slideAutoChange = () => {
         slide = 0;
     }
     slide += 1;
-    
+    slideChange(slide);
     
     console.log(slide);
     
 }
 
-setInterval(slideAutoChange, 5000);
+setInterval(slideAutoChange, 6000);
 
 let changeSlidePress = (x) => {
 
@@ -104,31 +104,41 @@ let slideChange = (x) => {
     // Turn on selected slide   
     if (x === 1) {
         slide1.className = "slideOn";
+        button1.className = "slideshowButtonOn";
     } else if (x === 2) {
         slide2.className = "slideOn";
+        button2.className = "slideshowButtonOn";
     } else if (x === 3) {
         slide3.className = "slideOn";
+        button3.className = "slideshowButtonOn";
     } else if (x === 4) {
         slide4.className = "slideOn";
+        button4.className = "slideshowButtonOn";
     } else if (x === 5) {
         slide5.className = "slideOn";
+        button5.className = "slideshowButtonOn";
     }
     
     // Turn off unused slides
     if (x !== 1) {
         slide1.className = "slideOff";
+        button1.className = "slideshowButton";
     }
     if (x !== 2) {
         slide2.className = "slideOff";
+        button2.className = "slideshowButton";
     }
     if (x !== 3) {
         slide3.className = "slideOff";
+        button3.className = "slideshowButton";
     }
     if (x !== 4) {
         slide4.className = "slideOff";
+        button4.className = "slideshowButton";
     }
     if (x !== 5) {
         slide5.className = "slideOff";
+        button5.className = "slideshowButton";
     }
 }
 

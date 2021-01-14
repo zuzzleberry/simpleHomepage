@@ -141,13 +141,33 @@ a {
 
 .slideshowButton {
     /* background-color: rgb(138, 226, 98); */
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(185, 185, 185);
     border-color: rgb(165, 165, 165);
     height: 12px;
     width: 10px;
     border-radius: 50%;
     border-width: 0px;
     transform: translate(0px, -50px);
+}
+.slideshowButtonOn {
+    /* background-color: rgb(138, 226, 98); */
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(165, 165, 165);
+    height: 12px;
+    width: 10px;
+    border-radius: 50%;
+    border-width: 0px;
+    transform: translate(0px, -50px);
+}
+.slideshowButton:focus {
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+}
+.slideshowButtonOn:focus {
+    border-style: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .buttonsBanner {
