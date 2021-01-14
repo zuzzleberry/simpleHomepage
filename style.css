@@ -226,6 +226,15 @@ a {
     to {opacity: 100%;}
 }
 
+[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
+
 .bannertext {
     color: rgb(243, 243, 243);
     padding-left: 20px;

@@ -190,5 +190,8 @@ let stickyNav = () => {
 }
 window.addEventListener("scroll", stickyNav);
 
+AOS.init({
+    duration: 1200,
+  })
 
 
