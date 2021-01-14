@@ -1,10 +1,4 @@
 .main {
-    /* display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    justify-content: center; */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,20 +16,11 @@
     height: 60px;
     width: 1000px;
     background-color: rgb(246, 246, 246)
-    /* align-self: flex-start; */
-    /* margin-left: 500px; */
-    
-    /* margin-right: 300px; */
     overflow: hidden;
-    
 }
 
 
-
-
-
 .banner {
-    /* position: fixed; */
     top:0;
     width: 1500px;
     z-index:2000
@@ -60,6 +45,14 @@
     top: 0;
 }
 
+.content {
+    padding: 16px;
+  }
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
 .tabs {
     width: auto;
     display: flex;
@@ -68,7 +61,6 @@
 }
 
 .tab {
-
     height: 60px;
     width: auto;
     border: none;
@@ -87,6 +79,7 @@
     box-shadow: none;
 }
 .tab:hover {
+    color: rgb(243, 243, 243); ;
     background-color: rgb(46, 46, 46);
 }
 
@@ -95,7 +88,6 @@
     flex-direction: row;
     align-content: space-evenly;
     width: 910px;
-    /* align-content: ; */
 }
 
 .dropdown-content {
@@ -114,6 +106,7 @@
     flex-direction: column;
     z-index: 2000;
 }
+
 /* .tab:hover #a {
     display: flex;
 } */
@@ -132,13 +125,6 @@ a {
     align-items: center;
 } */
 
-
-
-
-
-
-
-
 .images {
     display: flex;
     justify-content: center;
@@ -148,17 +134,22 @@ a {
 }
 
 .slides {
+    height: 712px;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 100px; */
-    background-color: rgb(246, 246, 246)
+    background-color: rgb(246, 246, 246);
+    overflow: hidden;
 }
 
 .slideOn {
     display: flex;
+    animation-name: opacity;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;  
 }
 .slideOff {
     display: none;
@@ -173,6 +164,7 @@ a {
     border-radius: 50%;
     border-width: 0px;
     transform: translate(0px, -50px);
+    cursor: pointer;
 }
 .slideshowButtonOn {
     /* background-color: rgb(138, 226, 98); */
@@ -183,6 +175,7 @@ a {
     border-radius: 50%;
     border-width: 0px;
     transform: translate(0px, -50px);
+    cursor: pointer;
 }
 .slideshowButton:focus {
     border-style: none;
@@ -196,17 +189,93 @@ a {
 }
 
 .buttonsBanner {
-    
     width: 150px;
     align-items: center;
 }
+
+/* @keyframes buttonSlide {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+} */
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(246, 246, 246);
     width: 150px;
+    opacity: 0%;
+    animation-delay: 1s;
+    animation-name: opacity;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;  
+
 }
+
+@keyframes swooshIn {
+    from {left: 100%;}
+    to {left: 70%;}
+}
+@keyframes swooshInSlow {
+    from {left: 300%;}
+
+}
+
+@keyframes opacity {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.bannertext {
+    color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: black;
+    font-weight: 5;
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    /* transform: translate(-50%, -50%); */
+    opacity: 0%;
+
+    animation-delay: 1.5s;
+    animation-name: swooshIn, opacity;
+    animation-timing-function: ease;
+    animation-duration: 2s, 500ms;
+    animation-fill-mode: forwards;  
+    
+
+}
+.bannerP {
+    background-color: black;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(243, 243, 243);
+    width: 150%;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    position: absolute;
+    opacity: 0%;
+    top: 100%;
+    left: 0%; 
+    animation-timing-function: ease;
+    animation-delay: 1.5s;
+    animation-name: swooshInSlow, opacity;
+    animation-duration: 2s, 500ms;
+    animation-fill-mode: forwards;  
+    
+
+    
+}
+
+
+
+
 
 .content {
     display: inline-flex;

@@ -172,7 +172,6 @@ let slideChange = (x) => {
 //     stickyNav()
 // };
 
-
 // Get the navbar
 let navbar = document.getElementById("menubar");
 
