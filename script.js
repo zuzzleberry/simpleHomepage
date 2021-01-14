@@ -89,6 +89,8 @@ let slideAutoChange = () => {
 
 setInterval(slideAutoChange, 6000);
 
+
+
 let changeSlidePress = (x) => {
 
     slide = x;
@@ -98,6 +100,27 @@ let changeSlidePress = (x) => {
 
     slideChange(x);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// View
+
+
 
 let slideChange = (x) => {
 
@@ -144,25 +167,29 @@ let slideChange = (x) => {
 
 
 
+// When the user scrolls the page, execute myFunction
+// window.onscroll = () => {
+//     stickyNav()
+// };
 
 
+// Get the navbar
+let navbar = document.getElementById("menubar");
 
+// Get the offset position of the navbar
+let sticky = navbar.offsetTop;
 
-
-
-
-
-
-
-
-
-
-// View
-
-
-
-
-
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+let stickyNav = () => {
+    console.log(window.pageYOffset)
+    console.log(sticky)
+    if (window.pageYOffset >= sticky) {
+        navbar.className = "menu sticky";
+    } else {
+        navbar.className = "menu";
+    }
+}
+window.addEventListener("scroll", stickyNav);
 
 
 

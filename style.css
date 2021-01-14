@@ -40,29 +40,54 @@
     width: 1500px;
     z-index:2000
 }
+
 .menu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 1500px;
+    background-color: black;
+    align-items: center;
+}
+.sticky {
     display: flex;
     position: fixed;
     flex-direction: column;
     width: 1500px;
     background-color: black;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
+
 .tabs {
+    width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .tab {
-    border: none;
-    font-size: 18px;
-    background-color: black;
-    
-    color: rgb(190, 190, 190);
+
     height: 60px;
-    width: 130px;
+    width: auto;
+    border: none;
+    background-color: black;
+    color: rgb(190, 190, 190);
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 20;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.tab:focus {
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+}
+.tab:hover {
+    background-color: rgb(46, 46, 46);
 }
 
 .dropdowns {
